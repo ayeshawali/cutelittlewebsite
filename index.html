@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Max</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ffd6e0, #e0b3ff);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #ff66b2;
+            border: none;
+            border-radius: 20px;
+            text-decoration: none;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #ff3385;
+        }
+        img {
+            width: 200px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function nextPage(page) {
+            document.body.innerHTML = pages[page];
+        }
+        
+        const pages = {
+            'flowers': `<h2>well first of all here are some flowers for you</h2>
+                        <img src='https://asset.bloomnation.com/c_pad,d_vendor:global:catalog:product:image.png,f_auto,fl_preserve_transparency,q_auto/v1675566666/vendor/3908/catalog/product/2/0/20210528012837_file_60b047453a39d_60b047d97d8dc..jpg' alt='Flowers'>
+                        <br><button class='button' onclick="nextPage('chocolates')">omg thank u perfect girl</button>` ,
+            'chocolates': `<h2>totally forgot about some chocolates, here u go</h2>
+                        <img src='https://cdn.thewirecutter.com/wp-content/media/2025/01/boxedchocolates-2048px-09154.jpg?auto=webp&quality=75&width=1024' alt='Chocolates'>
+                        <br><button class='button' onclick="nextPage('kisses')">SO CUTE! right?</button>` ,
+            'kisses': `<h2>fine... and u can have some kisses. pretty boy.</h2>
+                        <img src='https://i.pinimg.com/236x/53/e7/23/53e723b1fbe3463a4ae88a5a7967a439.jpg' alt='Kiss Marks'>
+                        <br><button class='button' onclick="nextPage('question')">kiss me back? muah !</button>` ,
+            'question': `<h2>okay max.. i have a question for you if you let me</h2>
+                        <img src='https://pbs.twimg.com/profile_images/1874493520637042688/42AgqlEd_400x400.png' alt='Question Page Image'>
+                        <br><button class='button' onclick="nextPage('shy')">uh huh?</button>
+                        <button class='button' onclick="nextPage('shy')">SAY IT !!!!!!!!!!!</button>` ,
+            'shy': `<h2>but im so shy... HEHEHEHEHEHEHEHEHEHEHEHEHEEH</h2>
+                        <img src='https://wompimages.ampify.care/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fphotos%2Fimages%2Fnewsfeed%2F002%2F418%2F775%2Ff5d.jpeg' alt='Shy Cat'>
+                        <br><button class='button' onclick="nextPage('final')">JUST SAY ITTIITITTITITITITI</button>` ,
+            'final': `<h2>max, love of my life, prettiest boy in the world and my forever blessing. will you be my valentine now and forever?</h2>
+                        <p>you make me smile, laugh, and feel so warm. i can't wait to spend the rest of my life with you. so my question would be... are you ready to be my forever?</p>
+                        <img src='https://i.ibb.co/vvPSS9F5/Screenshot-5.png' alt='Us'>
+                        <br><button class='button' onclick="nextPage('end')">YES YES YES YES!</button>` ,
+            'end': `<h2>i love you max. forever my baby. thank you for everything.</h2>
+                        <p>can't wait to spend the rest of my life with you, xbox giftcard n gifties waiting for u soon.. x</p>
+                        <img src='https://i.pinimg.com/originals/18/53/ad/1853adae05ace68f6979cbbac48af2ec.jpg' alt='Cute Cat'>`
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src='https://i.pinimg.com/236x/6a/db/ce/6adbce3f670d34edb458cbb589c36ed2.jpg' alt='First Page Image'>
+        <h2>hi max...... you absolute cutie.</h2>
+        <p>i fall more in love with you every single day. but before that.. i have a question to ask..</p>
+        <button class="button" onclick="nextPage('flowers')">go on then.</button>
+    </div>
+</body>
+</html>
